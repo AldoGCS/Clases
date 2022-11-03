@@ -1,0 +1,31 @@
+from random import *
+#Pedir el nombre del usuario
+
+nombre = input("Escribe tu nombre: ")
+intentos = 8
+numero_adivinar = randint(0,101)
+
+print("ADIVINA EL NUMERO DEL 0 AL 100\n")
+
+while intentos > 0:
+    intentos -= 1
+    numero_inputado = int(input("Escribe el numero: \n"))
+    if intentos > 0 and numero_adivinar > numero_inputado:
+        print(f"El numero que has aportado es menor que el numero correcto, te quedan {intentos} intentos")
+    if intentos > 0 and numero_adivinar < numero_inputado:
+        print(f"El numero que has aportado es mayor que el numero correcto, te quedan {intentos} intentos")
+    if numero_adivinar == numero_inputado:
+        print(f"Lo has conseguido {nombre} el numero era {numero_inputado}")
+    if intentos == 0 and numero_adivinar != numero_inputado:
+        print(f"Se acabo perdiste {nombre}")
+        continue
+
+
+
+
+
+
+
+
+
+
