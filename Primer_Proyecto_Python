@@ -1,0 +1,4 @@
+A = input("Escribe en 1 palabra lo que mas te gusta de la cerveza: ")
+B = input("Escribe en 1 palabra lo que mas te pasa con la cerveza: ")
+
+print("Un nombre Perfecto Seria: " + ("'" + A + B + "'"))
